@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+//CUSTOM HOOK QUE SE ENCARGA DE MANEAR EL CONTADOR
 export const useCounter = (initialState = 10) => {
 
   const [state, setState] = useState(initialState);
