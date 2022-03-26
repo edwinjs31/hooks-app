@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Message } from "./Message";
 import "./effect.css";
 
 export const SimpleForm = () => {
@@ -12,17 +13,17 @@ export const SimpleForm = () => {
 
   //se ejecuta cuando cambia algo en el estado(se ejecuta solo la primera vez)
   useEffect(() => {
-    console.log("Estado inicial");
+    //console.log("Estado inicial");
   },[]);
 
   //se ejecuta cuando cambia algo en el formulario
   useEffect(() => {
-    console.log("Cambio en el Form");
+    //console.log("Cambio en el Form");
   },[formState]);
 
   //Se ejecuta cuando cambia el email o cualquier elemento individualmente
   useEffect(() => {
-    console.log("Cambio en el Email");
+    //console.log("Cambio en el Email");
   },[email]);
 
   //evento onChange, para cambiar el valor de los elementos
@@ -58,6 +59,8 @@ export const SimpleForm = () => {
             onChange={ handleInputChange }
             />
       </div>
+      {/* Si el nombre es 123 se muestra el mensaje */}
+      { (name==='123') && <Message />}
     </>
   );
 };
