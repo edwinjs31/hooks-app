@@ -24,11 +24,12 @@ export const FormWithCustomHook = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='w-50'>
             <h1>FormWithCustomHook</h1>
             <hr />
 
-            <div className="form-group">
+            <div className="form-group mt-2">
+                <label>Nombre</label>
                 <input
                     type="text"
                     name="name"
@@ -40,7 +41,8 @@ export const FormWithCustomHook = () => {
                 />
             </div>
 
-            <div className="form-group">
+            <div className="form-group mt-2">
+                <label>Email</label>
                 <input
                     type="email"
                     name="email"
@@ -51,7 +53,8 @@ export const FormWithCustomHook = () => {
                     onChange={handleInputChange}
                 />
             </div>
-            <div className="form-group">
+            <div className="form-group mt-2">
+                <label>Password</label>
                 <input
                     type="password"
                     name="password"
@@ -62,7 +65,7 @@ export const FormWithCustomHook = () => {
                 />
             </div>
 
-            <button className="btn btn-primary" type="submit">Guardar</button>
+            <button className="btn btn-primary mt-4" type="submit">Guardar</button>
         </form>
     );
 };
