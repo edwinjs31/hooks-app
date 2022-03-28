@@ -3,7 +3,7 @@ import { useForm } from '../../hooks/useForm';
 import '../07-useReducer/sytyle.css';
 import { todoReducer } from './todoReducer';
 
-//APLICANDO USEREDUCE CON: initialState e init(obtiene los mismos resultado)
+//COMPONENTE PADRE PARA APLICAR USEREDUCE CON: initialState e init(obtiene los mismos resultado)
 
 /*
 //opcion 1 con initialState
@@ -107,6 +107,7 @@ export const TodoApp = () => {
                 <div className='col-sm-5'>
                     <h4 className='text-center'>Tareas({todos.length})</h4>
                     <hr />
+                    
                     <ul className='list-group list-group-flush'>
                         {
                             todos.map((todo, i) => (
