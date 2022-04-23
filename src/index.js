@@ -2,12 +2,13 @@ import React from "react";
 import {render} from "react-dom";
 //import './components/02-useEffect/effect.css'
 
-import { MainApp } from "./components/08-useContex/MainApp";
-// import { TodoApp } from "./components/07-useReducer/TodoApp";
-// import { CallbackHook } from "./components/06-memos/CallbackHook";
-// import { MemoHook } from "./components/06-memos/MemoHook";
-// import { Memorize } from "./components/06-memos/Memorize";
-// import { LayoutEffect } from "./components/05-useLayoutEffect/LayoutEffect";
+ import { MainApp } from "./components/08-useContex/MainApp";
+//import { TodoApp } from "./components/07-useReducer/TodoApp";
+//import { Padre } from "./components/06.1-tarea-memo/07-tarea-memo/Padre";
+//import { CallbackHook } from "./components/06-memos/CallbackHook";
+ //import { MemoHook } from "./components/06-memos/MemoHook";
+//import { Memorize } from "./components/06-memos/Memorize";
+ //import { LayoutEffect } from "./components/05-useLayoutEffect/LayoutEffect";
 //import { RealExampleRef } from "./components/04-useRef/RealExampleRef";
 //import { FocusScreen } from "./components/04-useRef/FocusScreen";
 //import { MultipleCustomHooks } from "./components/03-examples/MultipleCustomHooks";

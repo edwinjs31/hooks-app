@@ -6,7 +6,9 @@ export const CallbackHook = () => {
     const [counter, setCounter] = useState(10);
     // const increment = () => setCounter(counter + 1);
     
-    //parecido a useEffect pero con funciones
+    //parecido a useEffect pero cuando la dependencia es una funcion y retorna una funcion
+    //setCounter usa otra funcion para cambiar el estado del counter para eliminar la dependencia/errores
+    //c=counter, num=valor recibida desde el componente ShowIncremente
     const increment = useCallback((num) => {
         setCounter(c => c + num);
     }, [setCounter]);

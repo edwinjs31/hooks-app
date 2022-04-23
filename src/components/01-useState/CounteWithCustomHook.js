@@ -6,7 +6,7 @@ import './counter.css';
 export const CounteWithCustomHook = () => {
     //el hook retorna el estado y las dos funciones, si no le paso nada el valor inicial es 10
     const {state, increment, decrement, reset} = useCounter(40);
-
+  console.log(state);
   return (
     <>
         <h1>Counter with Hook: {state}</h1>

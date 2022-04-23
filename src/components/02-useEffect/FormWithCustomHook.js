@@ -4,7 +4,7 @@ import "./effect.css";
 
 export const FormWithCustomHook = () => {
 
-    const [valueForm, handleInputChange] = useForm({
+    const [valueForm, handleInputChange, reset] = useForm({
         name: "",
         email: "",
         password: ""
@@ -21,6 +21,7 @@ export const FormWithCustomHook = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(valueForm);
+        reset();
     }
 
     return (

@@ -7,19 +7,19 @@ export const Message = () => {
 
   //con un return que actua de limpiador
   useEffect(() => {
-    //evento para mostrar coordenadas del raton
+    //Cuerpo del efecto(componente mondato): evento para mostrar coordenadas del raton
     const mouseMoveFunction = (e) => {
       const crds = { x: e.x, y: e.y };
       setCoords(crds);
-      //console.log(coords);
     };
 
     window.addEventListener("mousemove", mouseMoveFunction);
 
-    //este return trabaja como limpiador
+    //face de limpieza(componente desmontado): Elimina el evento
     return () => {
       window.removeEventListener("mousemove", mouseMoveFunction);
     };
+    //dependencia por la que escucha: se ejecuta el evento cuando cambia esta dependencia
   }, []);
 
   return (

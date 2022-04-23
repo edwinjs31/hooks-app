@@ -9,12 +9,12 @@ export const MultipleCustomHooks = () => {
 
     //useFetch retorna un Array con un objeto(ver en postman)
     const { loading, data } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
-
+    //console.log(data);
     //data es un Array de objetos,el objeto en la primera posicion con atributos author,quote,etc. 
-    //si existe la data extrae la posicion[0], si no los dos variables son undefined 
+    //si existe la data extrae la posicion[0]
     const { author, quote } = !!data && data[0];
     return (
-        <div>
+        <div className='m-4'>
             <h1>BreakingBad Quotes</h1>
             <hr />
 

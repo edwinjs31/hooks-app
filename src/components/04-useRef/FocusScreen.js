@@ -24,7 +24,7 @@ export const FocusScreen = () => {
 
     
     return (
-        <div>
+        <div className='m-4'>
             <h1>Focus Screen</h1>
             <hr />
 

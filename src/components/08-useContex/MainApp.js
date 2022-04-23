@@ -10,6 +10,7 @@ export const MainApp = () => {
 
     return (
         //todos los componentes que estén dentro de este tag podrán acceder a la informacion
+        //se puede enviar un objeto con las propiedades que se queiera incluso con valores por defecto( temporal:123)
         <UserContext.Provider value={{ user, setUser }}>
             <AppRouter />
         </UserContext.Provider>

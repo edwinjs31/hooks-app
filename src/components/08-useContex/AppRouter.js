@@ -1,4 +1,4 @@
-//COMPONENTE QUE MANEJA LAS RUTAS, UNA APP PUEDE TENER MAS DE UN ARCHIVO DE ESTOS
+//COMPONENTE QUE MANEJA LAS RUTAS, UNA APP PUEDE TENER MAS DE UN ROUTER
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -16,9 +16,9 @@ export const AppRouter = () => {
                 <NavBar />
                 <div className='container'>
                     <Routes>
-                        <Route path="/" element={<HomeScreen />} />
-                        <Route path="/about" element={<AboutScreen />} />
-                        <Route path="/login" element={<LoginScreen />} />
+                        <Route exact path="/" element={<HomeScreen />} />
+                        <Route exact path="/about" element={<AboutScreen />} />
+                        <Route exact path="/login" element={<LoginScreen />} />
                         {/* Cuando se envia un path que no existe  */}
                         <Route path="*" element={<NotFound />} />
 

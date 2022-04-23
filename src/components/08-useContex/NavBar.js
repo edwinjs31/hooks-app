@@ -2,11 +2,12 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 //COMPONENTE DE LA BARRA DE NAVEGACION
+//la diferencia entre el Link y NavLink es que NavLik deja activado la posision en la que estás
 export const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
             <Link to="/" className="navbar-brand" >useContext</Link>
-
+            
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                     <NavLink to="/" className="nav-link" >Home</NavLink>

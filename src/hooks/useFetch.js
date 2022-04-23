@@ -14,7 +14,7 @@ export const useFetch = (url) => {
     }, []);
 
     useEffect(() => {
-        //Para nueva peticion al clicar 'Next quote' cambiar el estado,para que se muestre el loading.
+        //Para nueva peticion inicializar el estado,para que se muestre el loading.
         setState({ data: null, loading: true, error: null });
 
         fetch(url)

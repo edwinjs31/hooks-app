@@ -8,6 +8,7 @@ export const MemoHook = () => {
     const [show, setShow] = useState(true);
 
     //useMemo memoriza el valor del counter, si cambia su valor ejecuta la funcion 'procesoPesado'
+    //useMemo al igual que useEffect recibe un callBack y una dependencia
     const memoProcesoPesado = useMemo(() => procesoPesado(counter), [counter]);
     return (
         <div>

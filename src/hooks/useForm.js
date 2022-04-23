@@ -7,7 +7,7 @@ export const useForm = (initialState = {}) => {
     const [formValue, setValueForm] = useState(initialState);
 
     //para inicializar el formulario es decir resetear o limpiar
-    const reset=()=>{
+    const reset = () => {
         setValueForm(initialState);
     }
 
@@ -17,5 +17,5 @@ export const useForm = (initialState = {}) => {
     };
 
     //retornamos el objeto con los datos del form,la funcion del evento y la funcion reset
-    return [formValue,handleInputChange,reset];
+    return [formValue, handleInputChange, reset];
 };

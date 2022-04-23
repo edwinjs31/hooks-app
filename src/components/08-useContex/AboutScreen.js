@@ -6,6 +6,7 @@ export const AboutScreen = () => {
   const { user, setUser } = useContext(UserContext);
 
   const handleClick = () => setUser({});
+  
   return (
     <div>
       <h1>AboutScreen</h1>

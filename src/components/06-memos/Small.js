@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
-//memo sirve para memorizar el valor de props y si no cambia no ejecuta el resto de codigo
+//memoriza todo el contenido o valor del Componente, y solo se ejecutará cuando cmbie el valor de la props
 export const Small = memo(({ value }) => {
-    console.log('Me ejecuto cuando cambie el valor del prop');
+    console.log('Ejecucion del componente Small cuando cambia el valor del prop');
     return (
         <small> {value} </small>
     )

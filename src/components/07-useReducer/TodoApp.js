@@ -33,10 +33,10 @@ export const TodoApp = () => {
     //opcion 1
     //const [todos, dispatch] = useReducer(todoReducer, initialState);
 
-    //opcion 2: se pasa por defecto un Array vacio
+    //opcion 2: se pasa por defecto un Array vacio, devuleve el estado y el discpatch(encargado de enviar la accion)
     const [todos, dispatch] = useReducer(todoReducer, [], init);
 
-   
+
 
     //GUARDANDO DATOS EN EL LOCALSTORAGE
     //==============================================================================
@@ -65,7 +65,8 @@ export const TodoApp = () => {
         dispatch({ type: 'toggle', payload: todoId });
     }
 
-    //evento para agregar nueva tarea
+
+    //EVENTO PARA AGREGAR NUEVA TAREA
     const hadleAddTodo = (newTodo) => {
         //creamos la accion y enviamos
         dispatch({
@@ -80,8 +81,8 @@ export const TodoApp = () => {
             <h1>TodoApp</h1>
             <hr />
             <div className='row'>
-                {/* Columna de tareas */}
-                <div className='col-sm-5'>
+
+                <div className='col-sm-5'>{/* Columna de tareas */}
                     <h4 className='text-center'>Tareas({todos.length})</h4>
                     <hr />
                     <TodoList
@@ -90,9 +91,9 @@ export const TodoApp = () => {
                         handleDelete={handleDelete}
                     />
                 </div>
-                {/* Columna de opciones */}
-                <div className='col-sm-5'>
-                    <TodoAdd hadleAddTodo={hadleAddTodo}/>
+
+                <div className='col-sm-5'>{/* Columna de opciones */}
+                    <TodoAdd hadleAddTodo={hadleAddTodo} />
                 </div>
             </div>
         </div>
